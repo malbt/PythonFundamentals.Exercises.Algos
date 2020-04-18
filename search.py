@@ -1,4 +1,4 @@
-def binary_search(list_in: List[int], item: int) -> int:
+def binary_search(list_in, item):
     """
     If item exists in list_in, this function returns its position in the list.
     """
@@ -7,7 +7,7 @@ def binary_search(list_in: List[int], item: int) -> int:
     start = 0
     end = len(list_in) - 1
     while start <= end:
-        mid = start + (end - start)//2
+        mid = start + (end - start) // 2
         if my_list[mid] == item:
             return list_in.index(item)
         elif my_list[mid] > item:
@@ -16,3 +16,6 @@ def binary_search(list_in: List[int], item: int) -> int:
             start = mid + 1
         else:
             return None
+
+
+if __name__ == "__main__":
