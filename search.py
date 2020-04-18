@@ -9,13 +9,15 @@ def binary_search(list_in, item):
     while start <= end:
         mid = start + (end - start) // 2
         if my_list[mid] == item:
-            return list_in.index(item)
+            return my_list.index(item)
         elif my_list[mid] > item:
             end = mid - 1
         elif my_list[mid] < item:
             start = mid + 1
-        else:
-            return None
+        # else:
+        #     return None
+    else:
+        return None
 
 
-if __name__ == "__main__":
+
