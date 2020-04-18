@@ -6,6 +6,7 @@ def binary_search(list_in, item):
     result : position of an integer(item) in the list_in
     """
     my_list = sorted(list_in)
+    # my_list = list_in
 
     start = 0
     end = len(list_in) - 1
@@ -23,3 +24,10 @@ def binary_search(list_in, item):
 
 
 # returns nothing not even an error
+# list_in = [4, 10, 2, 20, 100, 800, 1, 35, 17]
+# item = 200
+if __name__ == '__main__':
+    list_in = [20, 10, 31, 4, 800, 799, 600]
+    my_list = sorted(list_in)
+    item = 600
+    print(binary_search(list_in, item))
